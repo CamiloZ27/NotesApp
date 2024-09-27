@@ -41,17 +41,19 @@ export const Signin = ({setUser, setIsRegistered}) => {
                     value={username} 
                     onChange={e => setUsername(e.target.value)} 
                     type="text" 
-                    placeholder="Username or email">
+                    placeholder="Username or email"
+                    className="input-login">
                 </input>
 
                 <input 
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     type="password" 
-                    placeholder="Password">
+                    placeholder="Password"
+                    className="input-login">
                 </input>
 
-                <button>Sign In</button>
+                <button className="login-button">Sign In</button>
                 <p className="link" onClick={() => setIsRegistered(false)}>Don't have an account?</p>
                 {error.status && <p className="error">{error.message}</p>}
             </form>

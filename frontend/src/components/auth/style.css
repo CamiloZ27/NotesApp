@@ -30,7 +30,7 @@
     box-shadow: 0 0 5px aliceblue;
 }
 
-input {
+.input-login {
     padding: 10px;
     margin: 10px 0;
     width: 100%;
@@ -38,7 +38,7 @@ input {
     box-sizing: border-box;
 }
 
-button {
+.login-button {
     padding: 10px;
     margin: 3.5px 0;
     width: 100%;
@@ -53,7 +53,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.login-button:hover {
     background-color: rgb(13, 74, 131);
     border-radius: 0px;
     transition-duration: 500ms;

@@ -58,7 +58,8 @@ export const Signup = ({setIsRegistered}) => {
                     onChange={e => setEmail(e.target.value)} 
                     type="email" 
                     placeholder="Email"
-                    disabled={isDisabled}>
+                    disabled={isDisabled}
+                    className="input-login">
                 </input>
 
                 <input 
@@ -66,7 +67,8 @@ export const Signup = ({setIsRegistered}) => {
                     onChange={e => setUsername(e.target.value)} 
                     type="text" 
                     placeholder="Username"
-                    disabled={isDisabled}>
+                    disabled={isDisabled}
+                    className="input-login">
                 </input>
 
                 <input 
@@ -74,7 +76,8 @@ export const Signup = ({setIsRegistered}) => {
                     onChange={e => setName(e.target.value)} 
                     type="text" 
                     placeholder="Full Name"
-                    disabled={isDisabled}>
+                    disabled={isDisabled}
+                    className="input-login">
                 </input>
 
                 <input 
@@ -82,10 +85,11 @@ export const Signup = ({setIsRegistered}) => {
                     onChange={e => setPassword(e.target.value)}
                     type="password" 
                     placeholder="Password"
-                    disabled={isDisabled}>
+                    disabled={isDisabled}
+                    className="input-login">
                 </input>
 
-                <button disabled={isDisabled}>Sign Up</button>
+                <button className='login-button' disabled={isDisabled}>Sign Up</button>
                 <p className="link" onClick={() => setIsRegistered(true)}>Already have an account?</p>
                 {error.status && <p className={type}>{error.message}</p>}
             </form>

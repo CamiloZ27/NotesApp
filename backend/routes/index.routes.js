@@ -3,9 +3,11 @@ const router = express.Router()
 
 const userRoutes = require('./user.routes')
 const authRoutes = require('./auth.routes')
+const noteRoutes = require('./note.routes')
 
 router.use('/api/v1/user', userRoutes)
 router.use('/api/v1/auth', authRoutes)
+router.use('/api/v1/note', noteRoutes)
 
 router.get('/', (req, res) => {
 
